@@ -59,7 +59,7 @@ public class StopwatchActivity extends Activity {
         }
     }
 
-
+//includes Toast
     @Override
     protected void onPause(){
         super.onPause();
@@ -91,6 +91,7 @@ public class StopwatchActivity extends Activity {
         seconds = 0;
     }
 
+    //modified to output time via logcat
     private void runTimer() {
         final TextView timeView = (TextView)findViewById(R.id.time_view);
         final Handler handler = new Handler();
